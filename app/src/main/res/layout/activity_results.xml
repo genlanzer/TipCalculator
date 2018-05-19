@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subtotal" />
+
+        <EditText
+            android:id="@+id/subtotal_next_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/subtotal_hint"
+            android:inputType="numberDecimal"
+            android:text="@string/subtotal_hint" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tip" />
+
+        <EditText
+            android:id="@+id/tip_amount_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/subtotal_hint"
+            android:inputType="numberDecimal"
+            android:text="@string/subtotal_hint" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total" />
+
+        <EditText
+            android:id="@+id/total_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/subtotal_hint"
+            android:inputType="numberDecimal"
+            android:text="@string/subtotal_hint" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_per_person" />
+
+        <EditText
+            android:id="@+id/tipPP_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/subtotal_hint"
+            android:inputType="numberDecimal"
+            android:text="@string/subtotal_hint" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_per_person" />
+
+        <EditText
+            android:id="@+id/totalPP_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/subtotal_hint"
+            android:inputType="numberDecimal"
+            android:text="@string/subtotal_hint" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

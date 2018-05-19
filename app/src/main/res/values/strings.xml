@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="tip_percentage">Tip %</string>
+    <string name="persons">Split how many ways?</string>
+
+    <string name="subtotal_hint">e.g. 0.00</string>
+    <string name="tip_hint">e.g. 18</string>
+    <string name="persons_hint">1</string>
+
+    <string name="calculate_tip_button">Calculate Tip</string>
+    <string name="tip">Total Tip</string>
+    <string name="total">Total</string>
+    <string name="tip_per_person">Tip Per Person</string>
+    <string name="total_per_person">Total Per Person</string>
+
+
+    <string name="tip_button">Not sure how much to tip?</string>
+    <string name="rating_hint">e.g. 3</string>
+    <string name="rating">How would you rate your experience from 1-5 (1 being the worst and 5 being the best)</string>
+    <string name="calculate_percentage_button">Calculate percentage</string>
+
+
+    <string name="settings_button">Settings</string>
+    <string name="currency_text">Currency</string>
+    <string name="default_tip">Default tip %</string>
+
+
+    <string name="dollar">$</string>
+    <string name="euro">€</string>
+    <string name="pound">£</string>
+
+    <string name="apply_button">Apply changes</string>
+
+
+
+
+</resources>
