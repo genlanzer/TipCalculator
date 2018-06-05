@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 
+import java.text.DecimalFormat;
+
 public class ResultsActivity extends AppCompatActivity {
 
     @Override
@@ -29,24 +31,24 @@ public class ResultsActivity extends AppCompatActivity {
 
 
         EditText subtotalText = findViewById(R.id.subtotal_next_id);
-        subtotalText.setText(""+subtotal+currency);
+        subtotalText.setText(""+roundTwoDecimals(subtotal)+currency);
         EditText tipText = findViewById(R.id.tip_amount_id);
-        tipText.setText(""+tip+currency);
+        tipText.setText(""+roundTwoDecimals(tip)+currency);
         EditText totalText = findViewById(R.id.total_id);
-        totalText.setText(""+total+currency);
+        totalText.setText(""+roundTwoDecimals(total)+currency);
 
         EditText tipPPText = findViewById(R.id.tipPP_id);
-        tipPPText.setText(""+tipPP+currency);
+        tipPPText.setText(""+roundTwoDecimals(tipPP)+currency);
         EditText totalPPText = findViewById(R.id.totalPP_id);
-        totalPPText.setText(""+totalPP+currency);
-
-
-
-
+        totalPPText.setText(""+roundTwoDecimals(totalPP)+currency);
 
 
     }
-
+    public double roundTwoDecimals(double d)
+    {
+        DecimalFormat twoDForm = new DecimalFormat("#.##");
+        return Double.valueOf(twoDForm.format(d));
+    }
 
 
 }

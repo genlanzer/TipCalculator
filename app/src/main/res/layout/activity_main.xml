@@ -14,6 +14,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="@string/subtotal" />
 
         <EditText
@@ -22,12 +23,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/subtotal_hint"
+            android:textSize="20sp"
             android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="@string/tip_percentage" />
 
         <EditText
@@ -36,12 +39,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/tip_hint"
+            android:textSize="20sp"
             android:inputType="number" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="@string/persons" />
 
         <EditText
@@ -51,6 +56,7 @@
             android:defaultValue="1"
             android:ems="10"
             android:hint="@string/persons_hint"
+            android:textSize="20sp"
             android:inputType="number|numberDecimal" />
 
         <Button
@@ -58,6 +64,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="calculatetip"
+            android:textSize="20sp"
+            android:background="#a2e9f6"
+            android:layout_marginTop="10dp"
             android:text="@string/calculate_tip_button" />
 
         <Button
@@ -65,6 +74,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="calculatepercentage"
+            android:textSize="20sp"
+            android:background="#a2e9f6"
+            android:layout_marginTop="10dp"
             android:text="@string/tip_button" />
 
         <Button
@@ -72,6 +84,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="goToSettings"
+            android:textSize="20sp"
+            android:background="#a2e9f6"
+            android:layout_marginTop="10dp"
             android:text="@string/settings_button" />
 
 

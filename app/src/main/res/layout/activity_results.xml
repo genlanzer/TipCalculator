@@ -14,7 +14,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/subtotal" />
+            android:text="@string/subtotal"
+            android:textSize="20sp"
+            />
 
         <EditText
             android:id="@+id/subtotal_next_id"
@@ -23,11 +25,13 @@
             android:ems="10"
             android:hint="@string/subtotal_hint"
             android:inputType="numberDecimal"
+            android:textSize="20sp"
             android:text="@string/subtotal_hint" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="@string/tip" />
 
         <EditText
@@ -37,11 +41,13 @@
             android:ems="10"
             android:hint="@string/subtotal_hint"
             android:inputType="numberDecimal"
+            android:textSize="20sp"
             android:text="@string/subtotal_hint" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="@string/total" />
 
         <EditText
@@ -51,11 +57,13 @@
             android:ems="10"
             android:hint="@string/subtotal_hint"
             android:inputType="numberDecimal"
+            android:textSize="20sp"
             android:text="@string/subtotal_hint" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="@string/tip_per_person" />
 
         <EditText
@@ -65,12 +73,14 @@
             android:ems="10"
             android:hint="@string/subtotal_hint"
             android:inputType="numberDecimal"
+            android:textSize="20sp"
             android:text="@string/subtotal_hint" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="@string/total_per_person" />
 
         <EditText
@@ -80,6 +90,7 @@
             android:ems="10"
             android:hint="@string/subtotal_hint"
             android:inputType="numberDecimal"
+            android:textSize="20sp"
             android:text="@string/subtotal_hint" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

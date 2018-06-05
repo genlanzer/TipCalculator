@@ -25,14 +25,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("sharedPreferences", MODE_PRIVATE);
-
-
         String tip = sharedPreferences.getString("Tip", "");
         System.out.println("Tip"+tip);
         EditText tipText = findViewById(R.id.tip_percentage_id);
         tipText.setText(tip);
-
-
+        EditText personsText = findViewById(R.id.persons_id);
+        personsText.setText("1");
 
     }
     public void calculatetip(View view)
@@ -48,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("subtotal", "" + totalText.getText());
             intent.putExtra("tip", "" + tipText.getText());
             intent.putExtra("persons", "" + personsText.getText());
-
             startActivity(intent);
 
         }
@@ -81,31 +78,18 @@ public class MainActivity extends AppCompatActivity {
         // check that it is the SecondActivity with an OK result
         if (requestCode == 1) {
             if (resultCode == RESULT_OK) {
-
-
                 int tip_percentage = 10 + (2 * Integer.parseInt(data.getStringExtra("tip_percentage")));
                 EditText tip = findViewById(R.id.tip_percentage_id);
                 tip.setText("" + tip_percentage);
             }
         }
-
-
     }
-
         public void goToSettings(View view) {
-
             // Start the SecondActivity
             Intent intent = new Intent(this, SettingsActivity.class);
             startActivity(intent);
 
         }
-
-
-
-
-
-
-
 
 
 }

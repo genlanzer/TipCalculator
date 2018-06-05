@@ -16,6 +16,7 @@
             android:id="@+id/default_tip_text_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="@string/default_tip" />
 
         <EditText
@@ -24,12 +25,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/tip_hint"
+            android:textSize="20sp"
             android:inputType="number" />
 
         <TextView
             android:id="@+id/currency_text_id2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="@string/currency_text" />
 
         <RadioGroup
@@ -43,6 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="20sp"
                 android:text="@string/euro" />
 
             <RadioButton
@@ -50,6 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="20sp"
                 android:text="@string/pound" />
 
             <RadioButton
@@ -57,6 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="20sp"
                 android:text="@string/dollar" />
 
         </RadioGroup>
@@ -66,6 +72,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/apply_button"
+            android:textSize="20sp"
+            android:background="#a2e9f6"
+            android:layout_marginTop="10dp"
             android:onClick="apply"/>
 
     </LinearLayout>
