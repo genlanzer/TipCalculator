@@ -3,6 +3,7 @@ package com.example.genlanzer.tipcalculator;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
@@ -17,17 +18,26 @@ public class SatisfactionActivity extends AppCompatActivity {
 
     public void calculate(View view) {
         EditText ratingText = findViewById(R.id.rating_edit_id);
-        String stringToPassBack = ratingText.getText().toString();
+        String rating = ratingText.getText().toString();
 
         Intent intent = new Intent();
-        intent.putExtra("tip_percentage", stringToPassBack);
-        setResult(RESULT_OK, intent);
-        finish();
+
+        if (!TextUtils.isEmpty(ratingText.getText())) {
+
+            intent.putExtra("tip_percentage", rating);
+            setResult(RESULT_OK, intent);
+            finish();
+
+        }
+        else{
+            
+
+        }
+        }
 
 
 
 
-    }
 }
 
 
